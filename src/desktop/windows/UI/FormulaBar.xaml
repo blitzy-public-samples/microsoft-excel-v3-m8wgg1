@@ -1,0 +1,24 @@
+<UserControl x:Class="Microsoft.Excel.Desktop.Windows.UI.FormulaBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Microsoft.Excel.Desktop.Windows.UI">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Column="0" 
+                   Text="fx" 
+                   VerticalAlignment="Center" 
+                   Margin="5,0,5,0" 
+                   FontWeight="Bold"/>
+        
+        <TextBox x:Name="FormulaTextBox" 
+                 Grid.Column="1" 
+                 VerticalAlignment="Center" 
+                 Margin="0,2,0,2" 
+                 AcceptsReturn="False" 
+                 AcceptsTab="False"/>
+    </Grid>
+</UserControl>
